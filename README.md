@@ -140,7 +140,6 @@ Se han incluido:
 
 El proyecto completo se encuentra organizado de la siguiente forma:
 
-```text
 RV_Pract 1 - Motín en la Cárcel/
 │
 ├── Assets/
@@ -157,6 +156,7 @@ RV_Pract 1 - Motín en la Cárcel/
 │
 └── Vídeo/
     └── Vídeo de demostración del proyecto
+
 Ejecución
 
 El proyecto dispone de dos formas de ejecución: mediante el proyecto de Unity o mediante el ejecutable para PC incluido en Build PC.
