@@ -157,7 +157,7 @@ RV_Pract 1 - Motín en la Cárcel/
 └── Vídeo/
     └── Vídeo de demostración del proyecto
 
-Ejecución
+## Ejecución
 
 El proyecto dispone de dos formas de ejecución: mediante el proyecto de Unity o mediante el ejecutable para PC incluido en Build PC.
 
@@ -174,6 +174,8 @@ Entrar en la carpeta Build PC.
 Ejecutar el archivo .exe incluido.
 Conectar las gafas de Realidad Virtual y sus controladores al PC.
 Iniciar la experiencia.
+
+
 Opción 2 — Abrir el proyecto en Unity
 
 Para modificar o ejecutar el proyecto desde Unity:
@@ -201,15 +203,15 @@ Vídeo de demostración.
 
 Acceder al proyecto completo en Google Drive
 
-Demostración
+## Demostración
 
 La carpeta Vídeo contiene una grabación del funcionamiento de la experiencia de Realidad Virtual.
 
-Recursos utilizados
+## Recursos utilizados
 
 Durante el desarrollo se han utilizado diferentes recursos disponibles en Unity Asset Store para la construcción del entorno, personajes, vehículos, objetos, iluminación, vegetación y texturas.
 
-Mi aportación
+## Mi aportación
 
 Mi participación en el proyecto se centró en el desarrollo y configuración de la experiencia de Realidad Virtual, colaborando en la creación y organización del entorno, la configuración de la navegación e interacción y la integración de los diferentes elementos necesarios para el funcionamiento de la escena.
 
@@ -226,10 +228,4 @@ Configuración del sistema XR.
 Pruebas de funcionamiento de la experiencia con las gafas de Realidad Virtual.
 Trabajo en equipo
 
-Proyecto desarrollado en grupo por:
-
-Marc Forés Doménech
-Carlos Molina Castellanos
-
-Grado en Tecnología Digital y Multimedia
-Universitat Politècnica de València
+Proyecto desarrollado en grupo en: Grado en Tecnología Digital y Multimedia por Universitat Politècnica de València
