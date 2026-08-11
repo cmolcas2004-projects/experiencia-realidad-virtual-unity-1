@@ -1,8 +1,4 @@
-Sí, es porque el bloque de estructura con ``` hace que **todo lo que viene después se interprete como código** en el editor de GitHub.
-
-Te lo paso **sin bloques de código**, para que puedas copiarlo entero y cada apartado salga correctamente:
-
-# RV_Pract1 – Motín en la Cárcel
+# Motín en la Cárcel
 
 Experiencia de Realidad Virtual desarrollada en Unity en la que el usuario se encuentra en el patio de una cárcel durante una misión de búsqueda y captura relacionada con un plan de huida.
 
