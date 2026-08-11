@@ -1,127 +1,28 @@
-# Motín en la Cárcel — Entorno de Realidad Virtual
+# RV_Pract1 – Motín en la Cárcel
 
-Experiencia de Realidad Virtual desarrollada en Unity que recrea el patio de una cárcel durante una misión de búsqueda y captura relacionada con un plan de huida.
+Experiencia de Realidad Virtual desarrollada en Unity en la que el usuario se encuentra en el patio de una cárcel durante una misión de búsqueda y captura relacionada con un plan de huida.
 
 ## Descripción
 
-El proyecto consiste en la creación de un entorno 3D inmersivo en el que el usuario se encuentra en el patio de una cárcel durante una misión de búsqueda y captura.
+El proyecto consiste en el desarrollo de un entorno de Realidad Virtual ambientado en el patio de una cárcel, diseñado para ofrecer una experiencia inmersiva en la que el usuario debe desenvolverse dentro del escenario mientras interactúa con diferentes elementos del entorno.
 
-La experiencia permite al usuario desplazarse por el entorno mediante los controladores de realidad virtual e interactuar con diferentes elementos de la escena.
+La escena recrea un entorno carcelario utilizando diferentes modelos, objetos, materiales y elementos decorativos procedentes de Unity Asset Store.
 
-El escenario combina elementos de diferentes recursos de Unity Asset Store, materiales, texturas, iluminación y elementos propios de la configuración del proyecto para crear un entorno penitenciario detallado y realista.
+El usuario puede desplazarse por el escenario mediante los controles de Realidad Virtual y enfrentarse a personajes que se desplazan por el entorno.
 
-## Escena
+Entre las principales características se incluyen:
 
-La escena principal del proyecto es:
-
-**Motín en la cárcel**
-
-El entorno representa el patio de una cárcel e incluye diferentes elementos relacionados con el escenario, como:
-
-- Edificios y estructuras penitenciarias.
-- Vallas y elementos de seguridad.
-- Vehículos policiales.
-- Personajes policiales.
-- Cámaras de vigilancia.
-- Puertas metálicas.
-- Bancos y mobiliario.
-- Elementos de iluminación.
-- Vegetación.
-- Elementos decorativos y urbanos.
-
-## Realidad Virtual
-
-El proyecto utiliza las herramientas de Realidad Virtual de Unity para proporcionar una experiencia inmersiva.
-
-Se han utilizado:
-
-- XR Plugin Management.
-- XR Interaction Toolkit.
-- XR Origin.
-- Controladores de Realidad Virtual.
-- Character Controller.
-- Character Controller Driver.
-
-El usuario puede desplazarse utilizando el joystick izquierdo de los controladores y controlar la rotación mediante el joystick derecho.
-
-## Interacción
-
-La escena incorpora elementos interactivos que permiten al usuario interactuar con determinados objetos del entorno.
-
-También se incluyen personajes policiales que pueden ser destruidos durante la experiencia.
-
-Los personajes realizan desplazamientos a velocidad moderada en horizontal sobre su posición y eje de inicio.
-
-Para la configuración de las interacciones se utilizan:
-
-- Prefabs.
-- Colliders.
-- Rigidbody.
-- XR Simple Interactable.
-- Etiquetas para la identificación de objetos.
-- Scripts de movimiento.
-- Scripts de destrucción.
-
-## Scripts
-
-El proyecto incorpora scripts desarrollados en C# para controlar el comportamiento de diferentes elementos de la experiencia.
-
-### Script de movimiento
-
-Controla el desplazamiento de los personajes dentro de la escena, realizando movimientos horizontales a una velocidad moderada.
-
-### Script de destrucción
-
-Permite activar la destrucción de determinados objetos mediante la interacción del usuario con los controladores de Realidad Virtual.
-
-El sistema de interacción está configurado para permitir la activación mediante los controles de los dispositivos VR.
-
-## Navegación
-
-El sistema de navegación está diseñado para proporcionar un movimiento sencillo y cómodo dentro del entorno virtual.
-
-El usuario puede:
-
-- Desplazarse mediante el joystick izquierdo.
-- Rotar mediante el joystick derecho.
-- Explorar el patio de la cárcel en primera persona.
-- Interactuar con diferentes elementos del escenario.
-
-La navegación utiliza `Character Controller` y `Character Controller Driver`.
-
-## Entorno 3D
-
-Uno de los principales objetivos del proyecto es la creación de un entorno penitenciario detallado.
-
-Para ello se han utilizado diferentes recursos de Unity Asset Store, además de materiales y texturas para mejorar el aspecto visual de la escena.
-
-Entre los recursos utilizados se encuentran elementos relacionados con:
-
-- Entornos industriales.
-- Edificios.
-- Vehículos policiales.
-- Personajes.
-- Cámaras de vigilancia.
-- Puertas.
-- Vallas.
-- Vegetación.
-- Mobiliario.
-- Iluminación.
-- Terreno.
-- Cielos y skyboxes.
-
-## Optimización y experiencia de usuario
-
-El proyecto presta especial atención a la organización del entorno y a la experiencia del usuario dentro de la aplicación.
-
-Se han incluido:
-
-- Una jerarquía organizada.
-- Una estructura ordenada de los recursos.
-- Abundantes elementos de diseño del entorno.
-- Elementos visuales para aumentar el realismo.
-- Optimización del escenario.
-- Sistema de navegación sencillo y accesible.
+- Entorno 3D ambientado en el patio de una cárcel.
+- Experiencia inmersiva mediante gafas de Realidad Virtual.
+- Movimiento mediante el joystick izquierdo.
+- Rotación mediante el joystick derecho.
+- Personajes policiales que se desplazan por el escenario.
+- Objetos y elementos decorativos distribuidos por el entorno.
+- Uso de colliders y rigidbodies para las interacciones físicas.
+- Interacción mediante XR Simple Interactable.
+- Elementos configurados para poder ser destruidos durante la experiencia.
+- Diseño del escenario mediante diferentes assets, materiales y texturas.
+- Experiencia sencilla y accesible para el usuario.
 
 ## Tecnologías
 
@@ -129,103 +30,131 @@ Se han incluido:
 - C#
 - XR Plugin Management
 - XR Interaction Toolkit
-- Realidad Virtual
+- Unity Input System
 - Character Controller
 - Character Controller Driver
+- Blender / modelos 3D
 - Unity Asset Store
-- Modelos 3D
-- Materiales y texturas
 
-## Estructura del proyecto
+## Escena principal
 
-El proyecto completo se encuentra organizado de la siguiente forma:
+El proyecto cuenta con una escena principal:
 
-RV_Pract 1 - Motín en la Cárcel/
-│
+**Motín en la cárcel** – Entorno 3D correspondiente al patio de una cárcel en el que se desarrolla la experiencia de Realidad Virtual.
+
+El escenario incluye diferentes elementos como edificios, vallas, vehículos, personajes, cámaras de vigilancia, mobiliario urbano, árboles, iluminación y otros elementos decorativos.
+
+## Interacciones y movimiento
+
+El usuario puede desplazarse por el escenario utilizando los controladores de Realidad Virtual.
+
+- **Joystick izquierdo:** desplazamiento del personaje.
+- **Joystick derecho:** rotación de la cámara/personaje.
+- **Personajes policiales:** realizan desplazamientos horizontales a velocidad moderada sobre su posición y eje de inicio.
+- **Objetos interactivos:** utilizan los componentes de interacción proporcionados por XR Interaction Toolkit.
+- **Elementos destruibles:** están configurados para responder a las acciones de interacción del usuario.
+
+La navegación utiliza **Character Controller** y **Character Controller Driver**, proporcionando un movimiento adecuado para la experiencia de Realidad Virtual.
+
+## Estructura de carpetas
+
+El proyecto se encuentra organizado siguiendo la estructura estándar de un proyecto de Unity:
+
+```text
+RV_Pract1/
 ├── Assets/
-│   └── Recursos, escenas, scripts, prefabs, materiales y elementos 3D
-│
+│   └── (escenas, scripts, prefabs, materiales, modelos y recursos)
 ├── Build PC/
-│   └── Ejecutable del proyecto para PC
-│
+│   └── (ejecutable del proyecto para PC)
 ├── Packages/
-│   └── Paquetes y dependencias de Unity
-│
+│   └── (paquetes y dependencias de Unity)
 ├── ProjectSettings/
-│   └── Configuración del proyecto Unity
-│
-└── Vídeo/
-    └── Vídeo de demostración del proyecto
+│   └── (configuración del proyecto de Unity)
+└── Video/
+    └── (vídeo de demostración del proyecto)
+Ejecución
 
-## Ejecución
+IMPORTANTE: para ejecutar la experiencia de Realidad Virtual se necesitan unas gafas de RV compatibles conectadas al PC.
 
-El proyecto dispone de dos formas de ejecución: mediante el proyecto de Unity o mediante el ejecutable para PC incluido en Build PC.
+Opción 1 – Ejecutable
 
-Opción 1 — Ejecutable para PC
+El proyecto incluye un ejecutable ya generado dentro de la carpeta Build PC, por lo que no es necesario abrir Unity para probar la experiencia.
 
-La forma más sencilla de probar la aplicación es utilizar el ejecutable incluido en la carpeta:
-
-Build PC/
-
-Pasos:
+Para ejecutar el proyecto:
 
 Descargar el proyecto completo desde Google Drive.
+Mantener la estructura de carpetas del proyecto.
 Entrar en la carpeta Build PC.
-Ejecutar el archivo .exe incluido.
-Conectar las gafas de Realidad Virtual y sus controladores al PC.
-Iniciar la experiencia.
+Conectar las gafas de Realidad Virtual al ordenador.
+Ejecutar el archivo .exe incluido en dicha carpeta.
+Esperar a que se inicie la aplicación.
+Utilizar los controladores de las gafas para desplazarse e interactuar con el entorno.
 
+Esta es la forma recomendada para probar directamente la experiencia sin necesidad de modificar el proyecto.
 
-Opción 2 — Abrir el proyecto en Unity
+Opción 2 – Abrir el proyecto en Unity
 
-Para modificar o ejecutar el proyecto desde Unity:
+También es posible abrir el proyecto completo mediante Unity.
 
 Descargar el proyecto completo.
+Extraerlo si se encuentra comprimido.
 Abrir Unity Hub.
-Seleccionar Open / Add project from disk.
-Seleccionar la carpeta raíz RV_Pract 1 - Motín en la Cárcel.
-Abrir el proyecto con la versión de Unity utilizada durante su desarrollo.
-Esperar a que Unity importe los paquetes y recursos.
-Abrir la escena Motín en la cárcel desde Assets.
-Conectar las gafas de Realidad Virtual y sus controladores al PC.
-Pulsar Play en Unity.
-Proyecto completo
+Seleccionar Add / Open Project.
+Seleccionar la carpeta raíz RV_Pract1.
+Abrir el proyecto con la versión de Unity utilizada para su desarrollo.
+Comprobar que los paquetes y la configuración de XR están correctamente cargados.
+Conectar las gafas de Realidad Virtual al ordenador.
+Abrir la escena Motín en la cárcel.
+Ejecutar el proyecto desde Unity mediante Play.
+Assets utilizados
 
-Debido al tamaño del proyecto y a la cantidad de recursos 3D utilizados, el proyecto completo se encuentra disponible en Google Drive.
+Para la creación del entorno se han utilizado diferentes recursos de Unity Asset Store, entre ellos:
 
-Incluye:
+Pillars Pack.
+Industrial Props Kit.
+Lighting Generator.
+Police Car & Helicopter.
+Police Officer.
+Metal Door.
+Surveillance Camera.
+City Props Pack.
+Plastic Trash Bins.
+Realistic Tree Pack.
+Black Walnut Tree.
+Street Lamps.
+Barrels.
+3D Dumbbell.
+Low Poly Old School Gym Equipment.
+Simple Bench.
+Outdoor Bench.
+Street Lights Pack.
+Street Bench.
+AllSky Free – Sky / Skybox Set.
+Realistic Terrain Textures.
+Tower The Last.
+Chainlink Fences.
+Storage Building.
 
-Carpeta Assets.
-Carpeta Packages.
-Carpeta ProjectSettings.
-Ejecutable para PC en Build PC.
-Vídeo de demostración.
+Los enlaces y referencias de los assets utilizados se encuentran recogidos en la documentación del proyecto.
 
-Acceder al proyecto completo en Google Drive
+Mi aportación
 
-## Demostración
+Participación en el desarrollo del proyecto de Realidad Virtual, colaborando en la creación y configuración del entorno, la integración de elementos del escenario y la implementación de funcionalidades necesarias para el funcionamiento de la experiencia.
 
-La carpeta Vídeo contiene una grabación del funcionamiento de la experiencia de Realidad Virtual.
+También se participó en las pruebas de funcionamiento, navegación e interacción del proyecto con dispositivos de Realidad Virtual.
 
-## Recursos utilizados
+Material del proyecto
 
-Durante el desarrollo se han utilizado diferentes recursos disponibles en Unity Asset Store para la construcción del entorno, personajes, vehículos, objetos, iluminación, vegetación y texturas.
+El material completo del proyecto, incluyendo los archivos de Unity, el ejecutable para PC y el vídeo de demostración, se encuentra disponible en el siguiente enlace:
 
-## Mi aportación
+Material completo del proyecto en Google Drive
 
-Mi participación en el proyecto se centró en el desarrollo y configuración de la experiencia de Realidad Virtual, colaborando en la creación y organización del entorno, la configuración de la navegación e interacción y la integración de los diferentes elementos necesarios para el funcionamiento de la escena.
+Documentación
 
-Entre las tareas realizadas se incluyen:
+La documentación del proyecto recoge información sobre el entorno desarrollado, los integrantes del grupo, los elementos utilizados, la configuración de Realidad Virtual, los prefabs, scripts, navegación, ejecutable y aspectos adicionales incorporados a la experiencia.
 
-Desarrollo y configuración del entorno de Realidad Virtual.
-Organización de la escena y sus diferentes elementos.
-Configuración del sistema de navegación.
-Integración de elementos 3D y recursos del entorno.
-Configuración de elementos interactivos.
-Trabajo con prefabs, colliders y Rigidbody.
-Integración y configuración de scripts de movimiento y destrucción.
-Configuración del sistema XR.
-Pruebas de funcionamiento de la experiencia con las gafas de Realidad Virtual.
-Trabajo en equipo
+Proyecto académico
 
-Proyecto desarrollado en grupo en: Grado en Tecnología Digital y Multimedia por Universitat Politècnica de València
+Proyecto desarrollado en grupo por Marc Forés Doménech y Carlos Molina Castellanos, dentro del Grado en Tecnología Digital y Multimedia de la Universitat Politècnica de València (UPV).
+
+El proyecto corresponde a una práctica de Realidad Virtual desarrollada mediante Unity.
