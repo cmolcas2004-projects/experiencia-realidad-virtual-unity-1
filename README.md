@@ -56,21 +56,6 @@ El usuario puede desplazarse por el escenario utilizando los controladores de Re
 
 La navegación utiliza **Character Controller** y **Character Controller Driver**, proporcionando un movimiento adecuado para la experiencia de Realidad Virtual.
 
-## Estructura de carpetas
-
-El proyecto se encuentra organizado siguiendo la estructura estándar de un proyecto de Unity.
-
-RV_Pract1/
-├── Assets/
-│   └── Escenas, scripts, prefabs, materiales, modelos y recursos
-├── Build PC/
-│   └── Ejecutable del proyecto para PC
-├── Packages/
-│   └── Paquetes y dependencias de Unity
-├── ProjectSettings/
-│   └── Configuración del proyecto de Unity
-└── Video/
-└── Vídeo de demostración del proyecto
 
 ## Ejecución
 
@@ -156,6 +141,4 @@ La documentación del proyecto recoge información sobre el entorno desarrollado
 
 ## Proyecto académico
 
-Proyecto desarrollado en grupo por **Marc Forés Doménech** y **Carlos Molina Castellanos**, dentro del **Grado en Tecnología Digital y Multimedia** de la **Universitat Politècnica de València (UPV)**.
-
-El proyecto corresponde a una práctica de Realidad Virtual desarrollada mediante Unity.
+Proyecto desarrollado en grupo, dentro del **Grado en Tecnología Digital y Multimedia** de la **Universitat Politècnica de València (UPV)**.
