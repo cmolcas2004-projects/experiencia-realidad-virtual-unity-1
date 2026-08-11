@@ -1,3 +1,7 @@
+Sí, es porque el bloque de estructura con ``` hace que **todo lo que viene después se interprete como código** en el editor de GitHub.
+
+Te lo paso **sin bloques de código**, para que puedas copiarlo entero y cada apartado salga correctamente:
+
 # RV_Pract1 – Motín en la Cárcel
 
 Experiencia de Realidad Virtual desarrollada en Unity en la que el usuario se encuentra en el patio de una cárcel durante una misión de búsqueda y captura relacionada con un plan de huida.
@@ -12,29 +16,29 @@ El usuario puede desplazarse por el escenario mediante los controles de Realidad
 
 Entre las principales características se incluyen:
 
-- Entorno 3D ambientado en el patio de una cárcel.
-- Experiencia inmersiva mediante gafas de Realidad Virtual.
-- Movimiento mediante el joystick izquierdo.
-- Rotación mediante el joystick derecho.
-- Personajes policiales que se desplazan por el escenario.
-- Objetos y elementos decorativos distribuidos por el entorno.
-- Uso de colliders y rigidbodies para las interacciones físicas.
-- Interacción mediante XR Simple Interactable.
-- Elementos configurados para poder ser destruidos durante la experiencia.
-- Diseño del escenario mediante diferentes assets, materiales y texturas.
-- Experiencia sencilla y accesible para el usuario.
+* Entorno 3D ambientado en el patio de una cárcel.
+* Experiencia inmersiva mediante gafas de Realidad Virtual.
+* Movimiento mediante el joystick izquierdo.
+* Rotación mediante el joystick derecho.
+* Personajes policiales que se desplazan por el escenario.
+* Objetos y elementos decorativos distribuidos por el entorno.
+* Uso de colliders y rigidbodies para las interacciones físicas.
+* Interacción mediante XR Simple Interactable.
+* Elementos configurados para poder ser destruidos durante la experiencia.
+* Diseño del escenario mediante diferentes assets, materiales y texturas.
+* Experiencia sencilla y accesible para el usuario.
 
 ## Tecnologías
 
-- Unity
-- C#
-- XR Plugin Management
-- XR Interaction Toolkit
-- Unity Input System
-- Character Controller
-- Character Controller Driver
-- Blender / modelos 3D
-- Unity Asset Store
+* Unity
+* C#
+* XR Plugin Management
+* XR Interaction Toolkit
+* Unity Input System
+* Character Controller
+* Character Controller Driver
+* Blender / modelos 3D
+* Unity Asset Store
 
 ## Escena principal
 
@@ -48,113 +52,114 @@ El escenario incluye diferentes elementos como edificios, vallas, vehículos, pe
 
 El usuario puede desplazarse por el escenario utilizando los controladores de Realidad Virtual.
 
-- **Joystick izquierdo:** desplazamiento del personaje.
-- **Joystick derecho:** rotación de la cámara/personaje.
-- **Personajes policiales:** realizan desplazamientos horizontales a velocidad moderada sobre su posición y eje de inicio.
-- **Objetos interactivos:** utilizan los componentes de interacción proporcionados por XR Interaction Toolkit.
-- **Elementos destruibles:** están configurados para responder a las acciones de interacción del usuario.
+* **Joystick izquierdo:** desplazamiento del personaje.
+* **Joystick derecho:** rotación de la cámara/personaje.
+* **Personajes policiales:** realizan desplazamientos horizontales a velocidad moderada sobre su posición y eje de inicio.
+* **Objetos interactivos:** utilizan los componentes de interacción proporcionados por XR Interaction Toolkit.
+* **Elementos destruibles:** están configurados para responder a las acciones de interacción del usuario.
 
 La navegación utiliza **Character Controller** y **Character Controller Driver**, proporcionando un movimiento adecuado para la experiencia de Realidad Virtual.
 
 ## Estructura de carpetas
 
-El proyecto se encuentra organizado siguiendo la estructura estándar de un proyecto de Unity:
+El proyecto se encuentra organizado siguiendo la estructura estándar de un proyecto de Unity.
 
-```text
 RV_Pract1/
 ├── Assets/
-│   └── (escenas, scripts, prefabs, materiales, modelos y recursos)
+│   └── Escenas, scripts, prefabs, materiales, modelos y recursos
 ├── Build PC/
-│   └── (ejecutable del proyecto para PC)
+│   └── Ejecutable del proyecto para PC
 ├── Packages/
-│   └── (paquetes y dependencias de Unity)
+│   └── Paquetes y dependencias de Unity
 ├── ProjectSettings/
-│   └── (configuración del proyecto de Unity)
+│   └── Configuración del proyecto de Unity
 └── Video/
-    └── (vídeo de demostración del proyecto)
-Ejecución
+└── Vídeo de demostración del proyecto
 
-IMPORTANTE: para ejecutar la experiencia de Realidad Virtual se necesitan unas gafas de RV compatibles conectadas al PC.
+## Ejecución
 
-Opción 1 – Ejecutable
+> **IMPORTANTE:** para ejecutar la experiencia de Realidad Virtual se necesitan unas gafas de RV compatibles conectadas al PC.
 
-El proyecto incluye un ejecutable ya generado dentro de la carpeta Build PC, por lo que no es necesario abrir Unity para probar la experiencia.
+### Opción 1 – Ejecutable
+
+El proyecto incluye un ejecutable ya generado dentro de la carpeta **Build PC**, por lo que no es necesario abrir Unity para probar la experiencia.
 
 Para ejecutar el proyecto:
 
-Descargar el proyecto completo desde Google Drive.
-Mantener la estructura de carpetas del proyecto.
-Entrar en la carpeta Build PC.
-Conectar las gafas de Realidad Virtual al ordenador.
-Ejecutar el archivo .exe incluido en dicha carpeta.
-Esperar a que se inicie la aplicación.
-Utilizar los controladores de las gafas para desplazarse e interactuar con el entorno.
+1. Descargar el proyecto completo desde Google Drive.
+2. Mantener la estructura de carpetas del proyecto.
+3. Entrar en la carpeta **Build PC**.
+4. Conectar las gafas de Realidad Virtual al ordenador.
+5. Ejecutar el archivo `.exe` incluido en dicha carpeta.
+6. Esperar a que se inicie la aplicación.
+7. Utilizar los controladores de las gafas para desplazarse e interactuar con el entorno.
 
 Esta es la forma recomendada para probar directamente la experiencia sin necesidad de modificar el proyecto.
 
-Opción 2 – Abrir el proyecto en Unity
+### Opción 2 – Abrir el proyecto en Unity
 
 También es posible abrir el proyecto completo mediante Unity.
 
-Descargar el proyecto completo.
-Extraerlo si se encuentra comprimido.
-Abrir Unity Hub.
-Seleccionar Add / Open Project.
-Seleccionar la carpeta raíz RV_Pract1.
-Abrir el proyecto con la versión de Unity utilizada para su desarrollo.
-Comprobar que los paquetes y la configuración de XR están correctamente cargados.
-Conectar las gafas de Realidad Virtual al ordenador.
-Abrir la escena Motín en la cárcel.
-Ejecutar el proyecto desde Unity mediante Play.
-Assets utilizados
+1. Descargar el proyecto completo.
+2. Extraerlo si se encuentra comprimido.
+3. Abrir **Unity Hub**.
+4. Seleccionar **Add / Open Project**.
+5. Seleccionar la carpeta raíz `RV_Pract1`.
+6. Abrir el proyecto con la versión de Unity utilizada para su desarrollo.
+7. Comprobar que los paquetes y la configuración de XR están correctamente cargados.
+8. Conectar las gafas de Realidad Virtual al ordenador.
+9. Abrir la escena **Motín en la cárcel**.
+10. Ejecutar el proyecto desde Unity mediante **Play**.
+
+## Assets utilizados
 
 Para la creación del entorno se han utilizado diferentes recursos de Unity Asset Store, entre ellos:
 
-Pillars Pack.
-Industrial Props Kit.
-Lighting Generator.
-Police Car & Helicopter.
-Police Officer.
-Metal Door.
-Surveillance Camera.
-City Props Pack.
-Plastic Trash Bins.
-Realistic Tree Pack.
-Black Walnut Tree.
-Street Lamps.
-Barrels.
-3D Dumbbell.
-Low Poly Old School Gym Equipment.
-Simple Bench.
-Outdoor Bench.
-Street Lights Pack.
-Street Bench.
-AllSky Free – Sky / Skybox Set.
-Realistic Terrain Textures.
-Tower The Last.
-Chainlink Fences.
-Storage Building.
+* Pillars Pack.
+* Industrial Props Kit.
+* Lighting Generator.
+* Police Car & Helicopter.
+* Police Officer.
+* Metal Door.
+* Surveillance Camera.
+* City Props Pack.
+* Plastic Trash Bins.
+* Realistic Tree Pack.
+* Black Walnut Tree.
+* Street Lamps.
+* Barrels.
+* 3D Dumbbell.
+* Low Poly Old School Gym Equipment.
+* Simple Bench.
+* Outdoor Bench.
+* Street Lights Pack.
+* Street Bench.
+* AllSky Free – Sky / Skybox Set.
+* Realistic Terrain Textures.
+* Tower The Last.
+* Chainlink Fences.
+* Storage Building.
 
 Los enlaces y referencias de los assets utilizados se encuentran recogidos en la documentación del proyecto.
 
-Mi aportación
+## Mi aportación
 
 Participación en el desarrollo del proyecto de Realidad Virtual, colaborando en la creación y configuración del entorno, la integración de elementos del escenario y la implementación de funcionalidades necesarias para el funcionamiento de la experiencia.
 
 También se participó en las pruebas de funcionamiento, navegación e interacción del proyecto con dispositivos de Realidad Virtual.
 
-Material del proyecto
+## Material del proyecto
 
 El material completo del proyecto, incluyendo los archivos de Unity, el ejecutable para PC y el vídeo de demostración, se encuentra disponible en el siguiente enlace:
 
-Material completo del proyecto en Google Drive
+' https://drive.google.com/drive/folders/1aCJ2JBKyxeiuJy_Y3BtcZ0bWowuWnfKN?usp=sharing&utm_source=chatgpt.com '
 
-Documentación
+## Documentación
 
 La documentación del proyecto recoge información sobre el entorno desarrollado, los integrantes del grupo, los elementos utilizados, la configuración de Realidad Virtual, los prefabs, scripts, navegación, ejecutable y aspectos adicionales incorporados a la experiencia.
 
-Proyecto académico
+## Proyecto académico
 
-Proyecto desarrollado en grupo por Marc Forés Doménech y Carlos Molina Castellanos, dentro del Grado en Tecnología Digital y Multimedia de la Universitat Politècnica de València (UPV).
+Proyecto desarrollado en grupo por **Marc Forés Doménech** y **Carlos Molina Castellanos**, dentro del **Grado en Tecnología Digital y Multimedia** de la **Universitat Politècnica de València (UPV)**.
 
 El proyecto corresponde a una práctica de Realidad Virtual desarrollada mediante Unity.
